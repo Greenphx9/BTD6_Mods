@@ -2,7 +2,7 @@ namespace RoboFarmer;
 
 public static class ModHelperData
 {
-    public const string Version = "1.0.0";
+    public const string Version = "1.0.1";
     public const string Name = "Robo-Farmer";
 
     public const string Description = "Gives the Banana Farmer infinite range, meaning it can collect banans from anywhere on the map.";

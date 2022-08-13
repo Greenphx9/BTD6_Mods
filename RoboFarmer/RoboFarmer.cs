@@ -4,6 +4,7 @@ using RoboFarmer;
 using Assets.Scripts.Models;
 using BTD_Mod_Helper.Extensions;
 using Assets.Scripts.Models.Towers.Behaviors;
+using BTD_Mod_Helper.Api;
 
 [assembly: MelonInfo(typeof(RoboFarmer.RoboFarmer), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -24,10 +25,13 @@ public class RoboFarmer : BloonsTD6Mod
             var power = model.powers[i];
             if(power.name == "BananaFarmer")
             {
+                power.icon = ModContent.GetSpriteReference<RoboFarmer>("Icon");
                 var towerModel = power.tower;
                 towerModel.range = 1000f;
                 towerModel.GetBehavior<CollectCashZoneModel>().attractRange = 1000f;
                 towerModel.GetBehavior<CollectCashZoneModel>().collectRange = 1000f;
+                towerModel.icon = ModContent.GetSpriteReference<RoboFarmer>("Icon");
+                towerModel.portrait = ModContent.GetSpriteReference<RoboFarmer>("Icon");
             }
         }
     }
