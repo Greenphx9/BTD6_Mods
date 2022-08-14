@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <RootNamespace>KingdomRushTowers</RootNamespace>
+        <Configurations>Debug;Release</Configurations>
+        <Nullable>enable</Nullable>
+        <AssemblyName>KingdomRushTowers</AssemblyName>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+        <Optimize>False</Optimize>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+        <Optimize>True</Optimize>
+        <DebugType>none</DebugType>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="TowerIMG\Archer\ArcherTowerDisplay.png" />
+      <None Remove="TowerIMG\Archer\ArcherTower_Icon.png" />
+      <None Remove="TowerIMG\Archer\MarksmenTowerDisplay.png" />
+      <None Remove="TowerIMG\Archer\MarksmenTower_Portrait.png" />
+      <None Remove="TowerIMG\Archer\MusketeerGarrisonDisplay.png" />
+      <None Remove="TowerIMG\Archer\MusketeerGarrison_Portrait.png" />
+      <None Remove="TowerIMG\Archer\PoisonArrow.png" />
+      <None Remove="TowerIMG\Archer\PoisonArrows_Icon.png" />
+      <None Remove="TowerIMG\Archer\RangersHideoutDisplay.png" />
+      <None Remove="TowerIMG\Archer\RangersHideout_Portrait.png" />
+      <None Remove="TowerIMG\Archer\SharpshooterTowerDisplay.png" />
+      <None Remove="TowerIMG\Archer\SharpshooterTower_Portrait.png" />
+      <None Remove="TowerIMG\Archer\ShrapnelShot_Icon.png" />
+      <None Remove="TowerIMG\Archer\SniperShot_Icon.png" />
+      <None Remove="TowerIMG\Archer\WrathOfTheForest_Icon.png" />
+      <None Remove="TowerIMG\Dwarven\500mmBigBerthaDisplay.png" />
+      <None Remove="TowerIMG\Dwarven\500mmBigBertha_Portrait.png" />
+      <None Remove="TowerIMG\Dwarven\ClusterLauncherXtreme_Icon.png" />
+      <None Remove="TowerIMG\Dwarven\DragonbreathLauncher_Icon.png" />
+      <None Remove="TowerIMG\Dwarven\DwarvenArtilleryDisplay.png" />
+      <None Remove="TowerIMG\Dwarven\DwarvenArtillery_Portrait.png" />
+      <None Remove="TowerIMG\Dwarven\DwarvenBombardDisplay.png" />
+      <None Remove="TowerIMG\Dwarven\DwarvenBombard_Icon.png" />
+      <None Remove="TowerIMG\Dwarven\DwarvenHowitzerDisplay.png" />
+      <None Remove="TowerIMG\Dwarven\DwarvenHowitzer_Portrait.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning1.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning2.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning3.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning4.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning5.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning6.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning7.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning8.png" />
+      <None Remove="TowerIMG\Dwarven\Lightning9.png" />
+      <None Remove="TowerIMG\Dwarven\Overcharge_Icon.png" />
+      <None Remove="TowerIMG\Dwarven\SuperchargedBolt_Icon.png" />
+      <None Remove="TowerIMG\Dwarven\Teslax104Display.png" />
+      <None Remove="TowerIMG\Dwarven\Teslax104_Portrait.png" />
+      <None Remove="TowerIMG\Mage\AdeptTowerDisplay.png" />
+      <None Remove="TowerIMG\Mage\AdeptTower_Portrait.png" />
+      <None Remove="TowerIMG\Mage\ArcaneWizardDisplay.png" />
+      <None Remove="TowerIMG\Mage\ArcaneWizard_Portrait.png" />
+      <None Remove="TowerIMG\Mage\DeathRay_Icon.png" />
+      <None Remove="TowerIMG\Mage\Elemental.png" />
+      <None Remove="TowerIMG\Mage\MageTowerDisplay.png" />
+      <None Remove="TowerIMG\Mage\MageTower_Icon.png" />
+      <None Remove="TowerIMG\Mage\Polymorph_Icon.png" />
+      <None Remove="TowerIMG\Mage\SorcererMageDisplay.png" />
+      <None Remove="TowerIMG\Mage\SorcererMage_Portrait.png" />
+      <None Remove="TowerIMG\Mage\SummonElemental_Icon.png" />
+      <None Remove="TowerIMG\Mage\Teleport_Icon.png" />
+      <None Remove="TowerIMG\Mage\WizardTowerDisplay.png" />
+      <None Remove="TowerIMG\Mage\WizardTower_Portrait.png" />
+      <None Remove="TowerIMG\Militia\BarbarianMeadHallDisplay.png" />
+      <None Remove="TowerIMG\Militia\BarbarianMeadHall_Portrait.png" />
+      <None Remove="TowerIMG\Militia\BarrackDefender0.png" />
+      <None Remove="TowerIMG\Militia\BarrackDefender1.png" />
+      <None Remove="TowerIMG\Militia\BarrackDefender2.png" />
+      <None Remove="TowerIMG\Militia\BarrackDefender3.png" />
+      <None Remove="TowerIMG\Militia\BarrackDefender4.png" />
+      <None Remove="TowerIMG\Militia\BarrackDefender5.png" />
+      <None Remove="TowerIMG\Militia\BarrackDefender6.png" />
+      <None Remove="TowerIMG\Militia\FootmenBarracksDisplay.png" />
+      <None Remove="TowerIMG\Militia\FootmenBarracks_Portrait.png" />
+      <None Remove="TowerIMG\Militia\HolyOrderDisplay.png" />
+      <None Remove="TowerIMG\Militia\HolyOrder_Portrait.png" />
+      <None Remove="TowerIMG\Militia\HolyStrike_Icon.png" />
+      <None Remove="TowerIMG\Militia\KnightsBarracksDisplay.png" />
+      <None Remove="TowerIMG\Militia\KnightsBarracks_Portrait.png" />
+      <None Remove="TowerIMG\Militia\MilitiaBarracksDisplay.png" />
+      <None Remove="TowerIMG\Militia\MilitiaBarracks_Icon.png" />
+      <None Remove="TowerIMG\Militia\MoreAxes_Icon.png" />
+      <None Remove="TowerIMG\Militia\ShieldOfValor_Icon.png" />
+      <None Remove="TowerIMG\Militia\WhirlwindAttack_Icon.png" />
+      <None Remove="TowerIMG\SheepBloon.png" />
+      <None Remove="TowerIMG\TowerContainerKingdomRush.png" />
+      <None Remove="TowerIMG\UpgradeIconKR.png" />
+    </ItemGroup>
+
+    <Import Project="..\btd6.targets" />
+</Project>
