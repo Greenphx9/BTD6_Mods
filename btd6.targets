@@ -46,12 +46,16 @@
         <Reference Include="$(ManagedFolder)\UnityEngine.UIModule.dll"/>
         <Reference Include="$(ManagedFolder)\Newtonsoft.Json.dll"/>
         <Reference Include="$(ManagedFolder)\Unity.Addressables.dll"/>
+        <Reference Include="$(ManagedFolder)\Il2CppNewtonsoft.Json.dll"/>
     </ItemGroup>
 
     <!--Mod Helper dependency-->
     <ItemGroup Condition="$(DontReferenceModHelper) != 'true'">
         <Reference Include="BloonsTD6 Mod Helper" Condition="Exists('$(BloonsTD6)\Mods\Btd6ModHelper.dll')">
             <HintPath>$(BloonsTD6)\Mods\Btd6ModHelper.dll</HintPath>
+        </Reference>
+        <Reference Include="BloonsTD6 Mod Helper" Condition="Exists('$(BloonsTD6)\Mods\BloonsTD6 Mod Helper.dll')">
+            <HintPath>$(BloonsTD6)\Mods\BloonsTD6 Mod Helper.dll</HintPath>
         </Reference>
     </ItemGroup>
 
